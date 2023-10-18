@@ -1,3 +1,4 @@
+import 'package:begin/sum.dart';
 import 'package:flutter/material.dart';
 
 // void main() {
@@ -32,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
       // Navigate to the next screen
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => SecondRoute()),
+        MaterialPageRoute(builder: (context) => Sum()),
       );
     } else {
       // Invalid login
@@ -65,7 +66,8 @@ class _LoginPageState extends State<LoginPage> {
               obscureText: true,
             ),
             SizedBox(height: 10),
-            Text(errorMessage, style: TextStyle(color: Colors.red)),
+            Text(errorMessage,
+                style: TextStyle(color: Color.fromARGB(255, 94, 25, 155))),
             ElevatedButton(
               onPressed: _login,
               child: Text('Login'),

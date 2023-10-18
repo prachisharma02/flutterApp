@@ -1,3 +1,4 @@
+import 'package:begin/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -89,6 +90,15 @@ class _MiniCaleState extends State<MiniCale> {
               ),
               enabled: false,
             ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => LoginPage()),
+              );
+            },
+            child: const Text('Go back!'),
           ),
         ],
       ),

@@ -2,100 +2,119 @@
 //import 'package:begin/assignment.dart';
 //import 'package:begin/counter.dart';
 //import 'package:begin/homePage.dart';
-import 'package:begin/login.dart';
-import 'package:begin/pictures.dart';
-import 'package:begin/router.dart';
-import 'package:begin/sum.dart';
-import 'package:begin/userimage.dart';
+// import 'package:begin/login.dart';
+// import 'package:begin/pictures.dart';
+// import 'package:begin/router.dart';
+// import 'package:begin/sum.dart';
+// import 'package:begin/userimage.dart';
+// import 'package:flutter/material.dart';
+import 'package:begin/firstsScreeen.dart';
+
+import 'package:begin/secondScreen.dart';
+import 'package:begin/thirdScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(myApp());
+  runApp(
+    MaterialApp(
+      title: 'NAMED ROUTE',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const FirstScreen(),
+        '/second': (context) => const SecondScreen(),
+        '/third': (context) => const ThirdScreen(),
+      },
+    ),
+  );
 }
 
-class myApp extends StatelessWidget {
-  const myApp({super.key});
+// void main() {
+//   runApp(myApp());
+// }
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: LoginPage(),
-    );
-  }
-}
+// class myApp extends StatelessWidget {
+//   const myApp({super.key});
 
-// // import 'package:flutter/material.dart';
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: LoginPage(),
+//     );
+//   }
+// }
 
-// // void main() {
-// //   runApp(const MyApp());
-// // }
+// import 'package:flutter/material.dart';
 
-// // class MyApp extends StatelessWidget {
-// //   const MyApp({super.key});
+// void main() {
+//   runApp(const MyApp());
+// }
 
-// //   // This widget is the root of your application.
-// //   @override
-// //   Widget build(BuildContext context) {
-// //     return MaterialApp(
-// //       title: 'myFluttergood',
-// //       debugShowCheckedModeBanner: false,
-// //       theme: ThemeData(
-// //         colorScheme:
-// //             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 89, 11, 224)),
-// //         useMaterial3: true,
-// //       ),
-// //       home: const MyHomePage(title: 'My first flutter app'),
-// //     );
-// //   }
-// // }
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
 
-// // class MyHomePage extends StatefulWidget {
-// //   const MyHomePage({super.key, required this.title});
+//   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'myFluttergood',
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//         colorScheme:
+//             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 89, 11, 224)),
+//         useMaterial3: true,
+//       ),
+//       home: const MyHomePage(title: 'My first flutter app'),
+//     );
+//   }
+// }
 
-// //   final String title;
+// class MyHomePage extends StatefulWidget {
+//   const MyHomePage({super.key, required this.title});
 
-// //   @override
-// //   State<MyHomePage> createState() => _MyHomePageState();
-// // }
+//   final String title;
 
-// // class _MyHomePageState extends State<MyHomePage> {
-// //   int _counter = 0;
+//   @override
+//   State<MyHomePage> createState() => _MyHomePageState();
+// }
 
-// //   void _incrementCounter() {
-// //     setState(() {
-// //       _counter++;
-// //     });
-// //   }
+// class _MyHomePageState extends State<MyHomePage> {
+//   int _counter = 0;
 
-// //   @override
-// //   Widget build(BuildContext context) {
-// //     return Scaffold(
-// //       appBar: AppBar(
-// //         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-// //         title: Text(widget.title),
-// //       ),
-// //       body: Center(
-// //         child: Column(
-// //           mainAxisAlignment: MainAxisAlignment.center,
-// //           children: <Widget>[
-// //             const Text(
-// //               'i am creating a new project',
-// //             ),
-// //             Text(
-// //               '$_counter',
-// //               style: Theme.of(context).textTheme.headlineMedium,
-// //             ),
-// //           ],
-// //         ),
-// //       ),
-// //       floatingActionButton: FloatingActionButton(
-// //         onPressed: _incrementCounter,
-// //         tooltip: 'Increment',
-// //         child: const Icon(Icons.add),
-// //       ),
-// //     );
-// //   }
-// // }
+//   void _incrementCounter() {
+//     setState(() {
+//       _counter++;
+//     });
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+//         title: Text(widget.title),
+//       ),
+//       body: Center(
+//         child: Column(
+//           mainAxisAlignment: MainAxisAlignment.center,
+//           children: <Widget>[
+//             const Text(
+//               'i am creating a new project',
+//             ),
+//             Text(
+//               '$_counter',
+//               style: Theme.of(context).textTheme.headlineMedium,
+//             ),
+//           ],
+//         ),
+//       ),
+//       floatingActionButton: FloatingActionButton(
+//         onPressed: _incrementCounter,
+//         tooltip: 'Increment',
+//         child: const Icon(Icons.add),
+//       ),
+//     );
+//   }
+// }
 // import 'package:flutter/material.dart';
 
 // void main() {
