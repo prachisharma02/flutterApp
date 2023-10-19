@@ -10,7 +10,7 @@ class SecondScreen extends StatelessWidget {
         title: const Text("SecondScreen"),
       ),
       body: Center(
-        child: Column(children: [
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           ElevatedButton(
             onPressed: () {
               // Navigate to the third screen when the button is pressed.

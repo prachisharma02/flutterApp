@@ -18,6 +18,7 @@ void main() {
   runApp(
     MaterialApp(
       title: 'NAMED ROUTE',
+      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
         '/': (context) => const FirstScreen(),
