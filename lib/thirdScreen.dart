@@ -15,13 +15,13 @@ class ThirdScreen extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/');
+                Navigator.pushNamed(context, '/first');
               },
               child: const Text("Go to First Screen"),
             ),
             ElevatedButton(
               onPressed: () {
-                // Add your logic for the second button here.
+                Navigator.pushNamed(context, '/second');
               },
               child: const Text("Second Button"),
             ),

@@ -10,14 +10,22 @@ class SecondScreen extends StatelessWidget {
         title: const Text("SecondScreen"),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            // You should navigate back to the first screen or another screen,
-            // not to '/second' again.
-            Navigator.pop(context);
-          },
-          child: Text('Go Back'), // Added a label for the button
-        ),
+        child: Column(children: [
+          ElevatedButton(
+            onPressed: () {
+              // Navigate to the third screen when the button is pressed.
+              Navigator.pushNamed(context, '/third');
+            },
+            child: const Text(
+                'Go to Third Screen'), // Added a label for the button
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/first');
+            },
+            child: const Text('Go to the first screen'),
+          )
+        ]),
       ),
     );
   }
