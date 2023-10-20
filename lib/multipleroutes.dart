@@ -18,9 +18,9 @@ class MultipleRoutes extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const FirstScreen(),
+        '/first': (context) => const FirstScreen(),
         '/second': (context) => const SecondScreen(),
         '/third': (context) => const ThirdScreen(),
-        '/first': (context) => const FirstScreen(),
       },
     );
   }
