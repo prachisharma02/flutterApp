@@ -1,3 +1,4 @@
+import 'package:begin/animation.dart';
 import 'package:flutter/material.dart';
 import 'package:begin/hero.dart'; // Adjust the import path as needed
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HeroClass(),
+      home: Animationn(),
     );
   }
 }

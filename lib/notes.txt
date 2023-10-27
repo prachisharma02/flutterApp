@@ -1,0 +1,10 @@
+flutter has two types of animation
+1. physics based
+2. tween
+physics based animation is used to mimic real world behaviour  for example when an object is 
+dropped and hits the ground it will bounce and continue to move forward but with each bounce it continues 
+to slow down with smaller rebounds and eventually stop  as the object get closer with each bounds the velocity 
+incraese but height dcerease 
+tween is the short for in between meaning that animation has beginning and ending a timeline curve 
+that specifiesthe timing and speed of the transition , the framework automatically calculates the 
+transition frm beginning to end 
