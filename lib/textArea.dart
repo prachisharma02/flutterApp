@@ -20,10 +20,22 @@ class Mycustomform extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 0, vertical: 16),
+          child: TextField(
+            maxLength: 12,
+            decoration: InputDecoration(
+              prefixText: "mca 2",
+              suffixText: "best wishes",
+              border: OutlineInputBorder(),
+              hintText: "enter text with 12 character",
+            ),
+          ),
+        ),
+        const Padding(
           padding: EdgeInsets.symmetric(horizontal: 0, vertical: 16),
           child: TextField(
             maxLength: 12,
@@ -36,15 +48,30 @@ class Mycustomform extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 0, vertical: 16),
-          child: TextField(
-              maxLength: 12,
-              decoration: InputDecoration(
-                prefixText: "mca 2",
-                suffixText: "best wishes",
-                border: OutlineInputBorder(),
-                hintText: "enter text with 12 character",
-              )),
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+          child: TextFormField(
+            decoration: const InputDecoration(
+              border: UnderlineInputBorder(),
+              labelText: "Enter your username",
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 16),
+          child: RichText(
+              text: TextSpan(
+                  text: "\n Examination\n",
+                  style: DefaultTextStyle.of(context).style,
+                  children: const <TextSpan>[
+                TextSpan(
+                    text: "datesheet",
+                    style:
+                        TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
+                TextSpan(
+                    text: "\nDeclared\n",
+                    style:
+                        TextStyle(fontSize: 40, fontWeight: FontWeight.w900)),
+              ])),
         )
       ],
     );

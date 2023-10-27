@@ -41,7 +41,7 @@ class _AnimcontrState extends State<Animcontr> {
     return Row(
       children: [
         AnimatedContainer(
-          duration: Duration(milliseconds: 500),
+          duration: const Duration(milliseconds: 500),
           curve: Curves.elasticOut,
           color: Colors.amber,
           height: _height,
