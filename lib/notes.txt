@@ -9,3 +9,7 @@ tween is the short for in between meaning that animation has beginning and endin
 that specifiesthe timing and speed of the transition , the framework automatically calculates the 
 transition frm beginning to end 
 hero me hme do screen define krni padti hai but animation me ek he screen m hojata hai
+
+using Animatedopacity
+if you need to  hide or partially hide a widget animated opacity is a great way to animate fading
+over time it takes parameter opacity duration curve and child 
