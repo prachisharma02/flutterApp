@@ -1,4 +1,4 @@
-eflutter has two types of animation
+flutter has two types of animation
 1. physics based
 2. tween
 physics based animation is used to mimic real world behaviour  for example when an object is 
@@ -13,3 +13,8 @@ hero me hme do screen define krni padti hai but animation me ek he screen m hoja
 using Animatedopacity
 if you need to  hide or partially hide a widget animated opacity is a great way to animate fading
 over time it takes parameter opacity duration curve and child 
+
+Curved animation
+it is used to define the progression of an animation class as anon linear curve we can use this to modify
+an existing animation by changing its interpolation method it is also used when we want to use a differnet 
+curve when playing an animation 
