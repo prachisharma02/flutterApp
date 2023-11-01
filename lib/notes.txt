@@ -18,3 +18,10 @@ Curved animation
 it is used to define the progression of an animation class as anon linear curve we can use this to modify
 an existing animation by changing its interpolation method it is also used when we want to use a differnet 
 curve when playing an animation 
+
+using drag and drop widget
+you implemented drag and drop feature by using the draggable and drag target  widget these widgets are used in
+conjuction. The dragg widget able widget has a data property that passes information to the drag target widget the drag 
+target widget can accept or refuse the data which gives you the ability to check for the correct data format 
+in this example you dragged the paint palette icon (draggable) over the text (dragtarget) and once you let ground
+the text color changes to red 

@@ -1,4 +1,5 @@
 import 'package:begin/animation.dart';
+import 'package:begin/gesture.dart';
 import 'package:begin/textArea.dart';
 import 'package:flutter/material.dart';
 import 'package:begin/opacity.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Opacityy(),
+      home: Gestures(),
     );
   }
 }
