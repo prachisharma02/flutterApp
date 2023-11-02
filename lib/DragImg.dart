@@ -6,17 +6,17 @@ class DragImage extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'MCA 3rd Sem - Draggable Demo',
-      home: HomePage(),
+      home: Page(),
     );
   }
 }
 
-class HomePage extends StatefulWidget {
+class Page extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _PageState createState() => _PageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _PageState extends State<Page> {
   String _targetUrl = '';
   int img = 1;
 
@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Draggable Demo'),
+        title: const Text('Draggable Demo'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(25),
@@ -33,41 +33,41 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Draggable<String>(
-                data: "images/$img.png",
-                child: Container(
-                  width: 300,
-                  height: 200,
-                  alignment: Alignment.center,
-                  color: Colors.purple,
-                  child: Image.asset(
-                    'images/$img.png', // Make sure your images exist at this path
-                    fit: BoxFit.cover,
+                  data: "images/$img.png",
+                  feedback: Material(
+                    elevation: 4.0,
+                    child: Container(
+                      width: 300,
+                      height: 200,
+                      alignment: Alignment.center,
+                      color: Colors.purple,
+                      child: Image.asset(
+                        'images/$img.png', // Make sure your images exist at this path
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                   ),
-                ),
-                feedback: Opacity(
-                  opacity: 0.4,
                   child: Container(
-                    color: Colors.purple,
                     width: 300,
                     height: 200,
                     alignment: Alignment.center,
+                    color: Colors.purple,
                     child: Image.asset(
-                      'images/$img.png', // Make sure your images exist at this path
+                      'images/$img.png',
                       fit: BoxFit.cover,
                     ),
-                  ),
-                ),
-              ),
-              SizedBox(
+                  )),
+              const SizedBox(
                 height: 50,
               ),
               DragTarget<String>(onAccept: (value) {
                 setState(() {
                   _targetUrl = value;
-                  if (img < 7)
+                  if (img < 7) {
                     img += 1;
-                  else
+                  } else {
                     img = 1;
+                  }
                 });
               }, builder: (_, candidateData, rejectedData) {
                 return Container(
