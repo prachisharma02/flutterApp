@@ -19,7 +19,7 @@ class Page extends StatefulWidget {
 class _PageState extends State<Page> {
   String _targetUrl = '';
   int img = 1;
-
+  int img_ink = 1;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,7 +82,28 @@ class _PageState extends State<Page> {
                         )
                       : Container(),
                 );
-              })
+              }),
+              InkWell(
+                  splashColor: Colors.greenAccent,
+                  highlightColor: Colors.amberAccent.withOpacity(0.5),
+                  child: Container(
+                    width: 350,
+                    height: 150,
+                    alignment: Alignment.center,
+                    child: Image.asset(
+                      'image/$img_ink.png',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  onTap: () {
+                    setState(() {
+                      if (img_ink < 7) {
+                        img_ink += 1;
+                      } else {
+                        img_ink = 1;
+                      }
+                    });
+                  })
             ],
           ),
         ),

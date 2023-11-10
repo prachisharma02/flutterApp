@@ -25,3 +25,7 @@ conjuction. The dragg widget able widget has a data property that passes informa
 target widget can accept or refuse the data which gives you the ability to check for the correct data format 
 in this example you dragged the paint palette icon (draggable) over the text (dragtarget) and once you let ground
 the text color changes to red 
+
+The Dismissible widget listens to vertical and horizotal dragging gestures. By using the dismisDirection 
+for the direction property you can limit which dragging gestures you listen to such as restricting to 
+horizontal-only gestures
