@@ -1,6 +1,8 @@
 import 'package:begin/DragImg.dart';
 import 'package:begin/GestureDrag.dart';
 import 'package:begin/gesture.dart';
+import 'package:begin/list.dart';
+import 'package:begin/lists.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DragImage(),
+      home: Listviews(),
     );
   }
 }
