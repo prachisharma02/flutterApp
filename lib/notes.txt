@@ -29,3 +29,15 @@ the text color changes to red
 The Dismissible widget listens to vertical and horizotal dragging gestures. By using the dismisDirection 
 for the direction property you can limit which dragging gestures you listen to such as restricting to 
 horizontal-only gestures
+ 
+Stack widget is commonly used to overlap position and align widget to create A custom outlook 
+a good example is a s Shopping cart with a number of items to purchase on the upper right side the stack
+ children list of the widget is either positioned or non positioned when you use opposition widget 
+ each child widget is placed at the appropriate location the stack widget resizes itself to accommodate 
+ all of the non position children the non positioned children are positioned to the alignment property 
+ top left or top right depending on the left to right on the right to left environment each stack child 
+ widget is drawn in order from bottom to top like stacking piece of paper on top of each other this means 
+ that the first widget drawn is at the bottom of the stack and then the next register is drawn above the
+  previous widget and so on each child widget is positioned on top of each other in the order of the 
+  stack children list the renderstack tag class handles the staff layout
+
